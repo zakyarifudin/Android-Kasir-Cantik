@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zaky.kasircantik.MenuEdit"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:background="#fcfcfc"
+    android:id="@+id/ll">
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="340dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/cerclebackgroundpurple"
+                        android:src="@drawable/ic_restaurant_menu_black_24dp"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="1dp"
+                        android:textSize="15dp"
+                        android:text="Nama Menu"/>
+
+                    <EditText
+                        android:id="@+id/editNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textKategori"
+                        android:layout_below="@+id/textNama"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:hint="Masukkan Nama Menu"
+                        android:textSize="15dp"
+                        />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="340dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circlebackgroundyellow"
+                        android:src="@drawable/ic_featured_play_list_black_24dp"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="1dp"
+                        android:textSize="15dp"
+                        android:text="Kategori Menu"/>
+
+                    <EditText
+                        android:id="@+id/editKategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/editNama"
+                        android:layout_below="@+id/textKategori"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:hint="Masukkan Kategori"
+                        android:textSize="15dp"
+                        />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="340dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/cerclebackgroundgreen"
+                        android:src="@drawable/ic_attach_money_black_24dp"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="1dp"
+                        android:textSize="15dp"
+                        android:text="Harga"/>
+
+                    <EditText
+                        android:id="@+id/editHarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textHarga"
+                        android:layout_below="@+id/textHarga"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:hint="Masukkan Harga Menu"
+                        android:textSize="15dp"
+                        />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="200dp"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="UPDATE" />
+        </RelativeLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zaky.kasircantik.ReportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack"
+        >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorOrange"
+            android:text="Total Pengunjung"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorLime"
+            android:text="Total Pendapatan"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/colorAccent"
+            android:text="Tanggal"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/listView"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="75dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
